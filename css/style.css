@@ -2,17 +2,18 @@
 ==== GLOBAL ====
 */
 
-body {
-	background: LightGrey;
-	font-family: "proxima-nova", sans-serif; 
-	font-size: 16px; 
-	color: #838994; 
-	letter-spacing: 0.03em;
+body { 
+	letter-spacing: 0.05em;
 	-webkit-font-smoothing: antialiased;
 }
 
 div {
 	border: 1px solid #000;
+}
+
+h1,
+h2 {
+	font-weight: 300;
 }
 
 
@@ -22,6 +23,9 @@ div {
 
 .container {
 	padding: 0px 15px;
+	width: 940px;
+	height: 70px;
+	margin: 0 auto;
 }
 
 
@@ -37,7 +41,8 @@ div {
 	transition: color 0.5s ease;
 	color: #838994;
 	font-size: 16px;
-	font-family: "proxima-nova", sans-serif; 
+	font-family: "proxima-nova", sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 .top-navigation .links li.active {
@@ -61,13 +66,13 @@ div {
 
 .top-navigation li {
 	float: left;
-	margin-top: 28px;
 	margin-left: 30px;
 }
 
 .top-navigation .links {
 	float: right;
 	display: inline-block;
+	margin-top: 28px;
 
 }
 
@@ -84,12 +89,21 @@ div {
 */
 
 .introduction {
-	background: url('https://dy53q6sor7j4i.cloudfront.net/assets/bg-graphic-go-2d18f6f49ce18d38642600987ceed918.jpg') center bottom no-repeat;
+	background: url('../img/first-background.jpg') center bottom no-repeat;
 	width: 100%;
-	height: 480px;
+	height: 550px;
 	background-size: cover;
+	text-align: center;
 }
 
+.introduction h1 {
+	color: #fff;
+}
 
+.pay-icon {
+	background: url('../img/icon-play.svg');
+	max-height: 35px;
+	max-width: 35px;
+}
 
 
