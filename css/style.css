@@ -29,16 +29,24 @@ div {
 ==== NAVIGATION ====
 */
 
-.top-navigation a {
+.top-navigation .links a {
 	text-decoration: none;
+	-webkit-transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-o-transition: color 0.5s ease;
+	transition: color 0.5s ease;
 	color: #838994;
 	font-size: 16px;
 	font-family: "proxima-nova", sans-serif; 
 }
 
-.top-navigation a:active {
+.top-navigation .links li.active {
 	color: #4c5058;
-	font-weight: 700;
+	font-weight: 600;
+}
+
+.top-navigation a:hover {
+	color: #333333;
 }
 
 .top-navigation {
@@ -53,7 +61,7 @@ div {
 
 .top-navigation li {
 	float: left;
-	margin-top: 26px;
+	margin-top: 28px;
 	margin-left: 30px;
 }
 
