@@ -1,28 +1,79 @@
+/*
+==== GLOBAL ====
+*/
 
 body {
 	background: LightGrey;
+	font-family: "proxima-nova", sans-serif; 
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
 
 div {
-	border: 1px solid red;
+	border: 1px solid #000;
+}
+
+
+/*
+==== LAYOUT ====
+*/
+
+.container {
+	padding: 0px 15px;
+}
+
+
+/*
+==== NAVIGATION ====
+*/
+
+.top-navigation a {
+	text-decoration: none;
+	color: #838994;
+	font-size: 16px;
+	font-family: "proxima-nova", sans-serif; 
+}
+
+.top-navigation a:active {
+	color: #4c5058;
+	font-weight: 700;
 }
 
 .top-navigation {
-	color: #fff;
+	background: #fff;
 }
 
 .top-navigation > .container {
-	width: 970px;
+	width: 940px;
 	height: 70px;
 	margin: 0 auto;
 }
 
+.top-navigation li {
+	float: left;
+	margin-top: 26px;
+	margin-left: 30px;
+}
+
+.top-navigation .links {
+	float: right;
+	display: inline-block;
+
+}
+
 .logo {
-	height: 60px;
+	height: 70px;
 	width: 26px;
-	background-image: url('https://dy53q6sor7j4i.cloudfront.net/assets/karma-wordmark-154a757ec336f1b3f56d19daeef7efdd.svg');
+/*	margin-left: 12px;*/
 	background-repeat: no-repeat;
 }
+
+
+/*
+==== INTRODUCTION ====
+*/
 
 .introduction {
 	background: url('https://dy53q6sor7j4i.cloudfront.net/assets/bg-graphic-go-2d18f6f49ce18d38642600987ceed918.jpg') center bottom no-repeat;
@@ -30,3 +81,7 @@ div {
 	height: 480px;
 	background-size: cover;
 }
+
+
+
+
