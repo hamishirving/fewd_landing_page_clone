@@ -171,6 +171,22 @@ h1, h2, h3, h4 {
 ==== LEARN MORE ====
 */
 
+.cases {
+	height: 528px;
+}
+
+.cases .devices {
+    width: 30.33%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 64px;
+    padding-left: 20px;
+    /* styles to assist with debugging */
+/*    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;*/
+}
+
 .cases h2 {
 	color: #1d1e21;
 	font-family: 'Lato', sans-serif;
@@ -184,27 +200,18 @@ h1, h2, h3, h4 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
-	margin-top: 40px;
+	margin-top: 36px;
 }
 
-.cases p {
+.devices p {
 	color: #1d1e21;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
-	margin-top: 20px;
+	font-size: 20px;
+	margin-top: 22px;
 	text-align: center;
-}
-
-.cases .devices {
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 70px;
-    /* styles to assist with debugging */
-    border: 1px solid black;
-    box-sizing: border-box;
-    height: 4em;
+	line-height: 1.5;
+	padding: 0 5px;
 }
 
 
@@ -215,9 +222,41 @@ h1, h2, h3, h4 {
 .karma-go {
 	background: url('../img/second-background.jpg') center bottom no-repeat;
 	width: 100%;
-	height: 550px;
+	height: 830px;
 	background-size: cover;
 	overflow: auto;
+}
+
+.about {
+	width: 29%;
+
+
+}
+
+.about h3 {
+	text-align: left;
+	color: #f15a29;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	margin-top: 148px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.about p {
+	color: #585e69;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	line-height: 1.5;
+	margin-top: 22px;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+
+.about .btn-primary {
+	margin-top: 25px;
 }
 
 
@@ -228,6 +267,14 @@ h1, h2, h3, h4 {
 footer {
 	height: 600px;
 }
+
+.icons {
+	height: 20px;
+	width: 20px;
+	background: red;
+	border: 1px solid lightGrey 50%;
+}
+
 
 
 
