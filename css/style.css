@@ -19,6 +19,30 @@ h1, h2, h3, h4 {
 	margin: 0 auto;
 }
 
+/*.grid {
+	margin-top: 90px;
+}*/
+
+.left, .middle, .right {
+	display: inline-block;
+}
+
+.left {
+	width: 26%;
+	float: left;
+}
+
+.middle {
+	width: 42%;
+	background: blue;
+}
+
+.right {
+	width: 32%;
+	float: right;
+	height: 100px;
+	background: orange;
+}
 
 /*
 ==== TOP NAVIGATION ====
@@ -264,15 +288,118 @@ h1, h2, h3, h4 {
 ==== FOOTER ====
 */
 
-footer {
-	height: 600px;
+.company {
+	text-align: left;
+	display: inline-block;
+}
+
+.blogo, .company, .support, .shop, .news {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+
+.company {
+	float: left;
+}
+
+.support {
+	float: right;
+}
+
+.social .title {
+	color: #4c5058;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	margin-top: 22px;
+	display: block;
+}
+
+.footer .social > p {
+	color: #838994;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.input-group {
+	position: relative;
+	display: table;
+	height: 40px;
+}
+
+.form-control {
+	border: 1px solid #caccd1;
+	border-radius: 4px;
+	padding: 6px 12px;
+	height: 35px;
+	width: 100%;
+	font-size: 18px;
+}
+
+hr {
+    border: 1px solid #efefef;
 }
 
 .icons {
-	height: 20px;
-	width: 20px;
-	background: red;
-	border: 1px solid lightGrey 50%;
+	text-align: center;
+}
+
+.fa {
+	display: inline-block;
+}
+
+.icons li {
+	display: inline-block;
+	text-align: center;
+}
+
+.icons .fa {
+	height: 42px;
+	width: 42px;
+	font-family: FontAwesome;
+	border: 1px solid #eaebec;
+	border-radius: 50%;
+	margin: 20px 10px;
+	text-align: center;
+	line-height: 44px;
+	vertical-align: -15%;
+}
+
+.icons li .fa-twitter {
+	color:#55ACEE;
+}
+
+.icons li .fa-facebook {
+	color:#4c66a4;
+}
+
+.icons li .fa-instagram {
+	color:#3f729b;
+}
+
+.icons li .fa-twitter:hover {
+	color:#3ea1ec;
+	cursor: pointer;
+}
+
+.icons li .fa-facebook:hover {
+	color:#445b93;
+	cursor: pointer;
+}
+
+.icons li .fa-instagram:hover {
+	color:#386589;
+	cursor: pointer;
 }
 
 
