@@ -32,8 +32,7 @@ h1, h2, h3, h4 {
 
 .right {
 	width: 32%;
-	float: right !important;
-/*	display: inline-block;*/
+	float: right;
 }
 
 /*
@@ -59,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 .top-navigation .links {
-	float: right !important;
+	float: right;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.04em;
@@ -79,12 +78,12 @@ h1, h2, h3, h4 {
 	transition: color 0.5s ease;
 }
 
-.top-navigation .links li.active {
+li.active {
 	color: #4c5058;
 	font-weight: 700;
 }
 
-.top-navigation .links li:hover {
+.links li:hover {
 	cursor: pointer;
 	color: #333333;
 }
@@ -351,7 +350,7 @@ h1, h2, h3, h4 {
 	letter-spacing: 0.03em;
 	position: relative;
 	top: -54px;
-	left: 12px;
+	left: 15px;
 	z-index: 1000;
 }
 
@@ -359,13 +358,12 @@ input[type="email"] {
 	border: 1px solid #caccd1;
 	border-radius: 4px;
 	padding-left: 12px;
-	height: 58px;
-	width: 294px;
+	padding-right: 80px;
+	padding-top: 12px;
+	padding-bottom: 10px;
 	font-size: 18px;
 	line-height: 2.0;
 	z-index: 2;
-	display: table-cell;
-
 }
 
 input::-webkit-input-placeholder {
