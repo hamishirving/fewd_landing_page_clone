@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
 
 .middle {
 	width: 42%;
-	background: blue;
+/*	background: blue;*/
 }
 
 .right {
@@ -47,6 +47,19 @@ h1, h2, h3, h4 {
 /*
 ==== TOP NAVIGATION ====
 */
+
+.top-navigation {
+	background: #fff;
+	border-bottom: 1px solid #efefef;
+	position: fixed;
+	width: 100%
+}
+
+.top-navigation > .content {
+	width: 940px;
+	height: 70px;
+	margin: 0 auto;
+}
 
 .top-navigation .logo {
 	height: 70px;
@@ -83,16 +96,6 @@ h1, h2, h3, h4 {
 	color: #333333;
 }
 
-.top-navigation {
-	background: #fff;
-}
-
-.top-navigation > .content {
-	width: 940px;
-	height: 70px;
-	margin: 0 auto;
-}
-
 
 /*
 ==== INTRODUCTION ====
@@ -104,6 +107,7 @@ h1, h2, h3, h4 {
 	height: 550px;
 	background-size: cover;
 	overflow: auto;
+	display: block;
 }
 
 .introduction h1 {
@@ -288,23 +292,51 @@ h1, h2, h3, h4 {
 ==== FOOTER ====
 */
 
-.company {
-	text-align: left;
-	display: inline-block;
+.grid {
+	margin-top: 84px;
+}
+
+.blogo {
+	margin-top: 6px;
 }
 
 .blogo, .company, .support, .shop, .news {
 	display: inline-block;
-	text-align: left;
-	width: 100%;
-}
-
-.company {
 	float: left;
+	text-align: left;
+	color: #4c5058;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.8;
+	margin-right: 76px;
+	margin-bottom: 10px;
+/*	width: 100%;*/
 }
 
-.support {
-	float: right;
+.company li a,
+.shop li a,
+.support li a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-decoration: none;
+	color: #838994;
+	transition: color 0.2s;
+}
+
+.company li a:hover,
+.shop li a:hover,
+.support li a:hover {
+	color: #f15a29;
+}
+
+.shop li {
+
+}
+
+.support li {
+
 }
 
 .social .title {
@@ -352,10 +384,6 @@ hr {
 
 .icons {
 	text-align: center;
-}
-
-.fa {
-	display: inline-block;
 }
 
 .icons li {
