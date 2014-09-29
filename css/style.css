@@ -88,6 +88,10 @@ li.active {
 	color: #333333;
 }
 
+.links ul li {
+	float: left;
+}
+
 
 /*
 ==== INTRODUCTION ====
