@@ -30,15 +30,12 @@ h1, h2, h3, h4 {
 
 .middle {
 	width: 42%;
-/*	background: blue;*/
 }
 
 .right {
 	width: 32%;
 	float: right;
 	display: inline;
-/*	height: 100px;*/
-/*	background: orange;*/
 }
 
 /*
