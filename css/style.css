@@ -19,10 +19,6 @@ h1, h2, h3, h4 {
 	margin: 0 auto;
 }
 
-/*.grid {
-	margin-top: 90px;
-}*/
-
 .left, .middle, .right {
 	display: inline-block;
 }
@@ -40,8 +36,9 @@ h1, h2, h3, h4 {
 .right {
 	width: 32%;
 	float: right;
-	height: 100px;
-	background: orange;
+	display: inline;
+/*	height: 100px;*/
+/*	background: orange;*/
 }
 
 /*
@@ -52,7 +49,8 @@ h1, h2, h3, h4 {
 	background: #fff;
 	border-bottom: 1px solid #efefef;
 	position: fixed;
-	width: 100%
+	width: 100%;
+	z-index: 100;
 }
 
 .top-navigation > .content {
@@ -301,7 +299,7 @@ h1, h2, h3, h4 {
 }
 
 .blogo, .company, .support, .shop, .news {
-	display: inline-block;
+/*	display: inline-block;*/
 	float: left;
 	text-align: left;
 	color: #4c5058;
@@ -322,6 +320,10 @@ h1, h2, h3, h4 {
 	font-size: 14px;
 	text-decoration: none;
 	color: #838994;
+	margin-top: 15px;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-o-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
@@ -329,14 +331,6 @@ h1, h2, h3, h4 {
 .shop li a:hover,
 .support li a:hover {
 	color: #f15a29;
-}
-
-.shop li {
-
-}
-
-.support li {
-
 }
 
 .social .title {
@@ -351,7 +345,7 @@ h1, h2, h3, h4 {
 	display: block;
 }
 
-.footer .social > p {
+.copyright {
 	color: #838994;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
@@ -363,7 +357,59 @@ h1, h2, h3, h4 {
 	margin-bottom: 100px;
 }
 
-.input-group {
+/*form {
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px 20px;
+	display: inline;
+	float: left;
+	clear: both;
+}*/
+
+label.form-label {
+	color: #838994;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	position: relative;
+	top: -54px;
+	left: 12px;
+	z-index: 1000;
+}
+
+input[type="email"] {
+	border: 1px solid #caccd1;
+	border-radius: 4px;
+	padding-left: 12px;
+	height: 58px;
+	width: 294px;
+	font-size: 18px;
+	line-height: 2.0;
+	background: rgba(255, 255, 255, 0.1);
+	z-index: 2;
+	display: table-cell;
+
+}
+
+input::-webkit-input-placeholder {
+	color: #caccd1;
+	letter-spacing: 0.02em;
+	padding-top: 8px;
+}
+
+input::-moz-placeholder {
+	color: #caccd1;
+	letter-spacing: 0.02em;
+	padding-top: 20px;
+}
+
+.asterix {
+	color: red;
+}
+
+/*.input-group {
 	position: relative;
 	display: table;
 	height: 40px;
@@ -376,8 +422,9 @@ h1, h2, h3, h4 {
 	height: 35px;
 	width: 100%;
 	font-size: 18px;
+	clear: both;
 }
-
+*/
 hr {
     border: 1px solid #efefef;
 }
@@ -397,7 +444,7 @@ hr {
 	font-family: FontAwesome;
 	border: 1px solid #eaebec;
 	border-radius: 50%;
-	margin: 20px 10px;
+	margin: 20px 4px;
 	text-align: center;
 	line-height: 44px;
 	vertical-align: -15%;
