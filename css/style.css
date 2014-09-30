@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
 }
 
 .top-navigation .links {
-	float: right;
+	float: right !important;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.04em;
@@ -88,8 +88,8 @@ h1, h2, h3, h4 {
 	color: #333333;
 }
 
-.links ul li {
-	float: left;
+.links {
+	display: inline-block;
 }
 
 
