@@ -27,11 +27,11 @@ h1, h2, h3, h4 {
 }
 
 .middle {
-	width: 40%;
+	width: 42%;
 }
 
 .right {
-	width: 30%;
+	width: 32%;
 	float: right;
 }
 
@@ -281,6 +281,10 @@ h1, h2, h3, h4 {
 /*
 ==== FOOTER ====
 */
+
+.footer {
+	display: relative;
+}
 
 .grid {
 	margin-top: 84px;
